@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  start-client:
+    build:
+      context: ./client
+    command: yarn start
+    container_name: start-client
+    ports:
+      - 3000:3000
+    stdin_open: true
+    volumes:
+      - ./client:/usr/src/app
