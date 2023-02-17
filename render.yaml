@@ -2,6 +2,7 @@ services:
   - type: web
     env: static
     name: client
+    env: docker
     repo: https://github.com/devdjangoreact/render_docker.git
     buildFilter:
       paths:
