@@ -1,11 +1,11 @@
 version: "3.9"
 
 services:
-  start-client:
+  client:
     build:
       context: ./client
     command: yarn start
-    container_name: start-client
+    container_name: client
     ports:
       - 3000:3000
     stdin_open: true
